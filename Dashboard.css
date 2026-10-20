@@ -1,0 +1,262 @@
+/* DASHBOARD PAGE STYLING */
+
+.dashboard-page {
+    padding: 60px 20px;
+    background-color: var(--background);
+}
+
+.dashboard-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Welcome banner card */
+.dashboard-welcome-banner {
+    background: linear-gradient(135deg, #1E3A8A 0%, #0369A1 100%);
+    border-radius: 16px;
+    padding: 40px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    box-shadow: 0 10px 15px -3px rgba(3, 105, 161, 0.1);
+}
+
+.welcome-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.welcome-tag {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #38BDF8;
+    background-color: rgba(56, 189, 248, 0.15);
+    padding: 4px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.welcome-title {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+}
+
+.welcome-desc {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #E0F2FE;
+    margin: 0;
+    max-width: 600px;
+}
+
+.welcome-btn {
+    background-color: #FFFFFF;
+    color: var(--primary);
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.welcome-btn:hover {
+    background-color: #F1F5F9;
+    transform: translateY(-1px);
+}
+
+/* METRICS GRID */
+.dashboard-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* CONTENT LAYOUT */
+.dashboard-content-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 24px;
+}
+
+.dashboard-panel {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01);
+}
+
+.panel-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 20px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #F1F5F9;
+}
+
+/* Assessment Summary styling */
+.summary-data-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F1F5F9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.summary-row:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+.summary-label {
+    font-size: 14.5px;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.summary-value {
+    font-size: 14.5px;
+    color: var(--text);
+    font-weight: 700;
+    text-align: right;
+}
+
+.font-highlight {
+    color: var(--primary);
+}
+
+.summary-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.summary-btn-result {
+    padding: 12px 24px;
+    font-size: 14px;
+}
+
+/* Empty assessment status */
+.assessment-empty-state {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.empty-state-icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.assessment-empty-state h4 {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    color: var(--text);
+}
+
+.assessment-empty-state p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+/* Guides list */
+.educational-tips-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tip-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 14px;
+    background-color: #FFFDF5;
+    border-left: 4px solid var(--warning);
+    border-radius: 4px 8px 8px 4px;
+}
+
+.tip-bullet {
+    font-size: 18px;
+}
+
+.tip-text {
+    font-size: 13.5px;
+    color: #78350F;
+    line-height: 1.5;
+}
+
+.tip-text strong {
+    color: var(--text);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .dashboard-content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-metrics-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .dashboard-welcome-banner {
+        padding: 30px 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .welcome-btn {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-history-view {
+        display: none !important;
+    }
+    .mobile-history-view {
+        display: flex !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .desktop-history-view {
+        display: block !important;
+    }
+    .mobile-history-view {
+        display: none !important;
+    }
+}

@@ -1,0 +1,367 @@
+/* RESULT PAGE STYLING */
+
+.result-page {
+    padding: 60px 20px;
+    background-color: var(--background);
+}
+
+.result-container {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 24px;
+    border-bottom: 1.5px solid #F1F5F9;
+    margin-bottom: 24px;
+}
+
+.result-tag {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary);
+}
+
+.result-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text);
+    margin: 4px 0 0 0;
+}
+
+.result-meta {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.meta-label {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.meta-value {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* DEMO WARNING INFO PANEL */
+.result-alert-info {
+    background-color: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    border-radius: 8px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.alert-icon-info {
+    font-size: 18px;
+    color: var(--primary);
+    margin-top: 1px;
+}
+
+.alert-text-info {
+    font-size: 13.5px;
+    color: #1E40AF;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* METRICS GRID */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+/* CONTENT LAYOUT */
+.result-content-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.column-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text);
+    margin: 0 0 24px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #E2E8F0;
+}
+
+.sub-column-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 30px 0 16px 0;
+}
+
+/* BMI Detailed Analysis Box */
+.bmi-analysis-details {
+    background-color: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.detail-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: var(--text);
+}
+
+.detail-desc {
+    font-size: 14.5px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.risks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Condition Alerts Panel */
+.conditions-alert-panel {
+    background-color: #FFFDF5;
+    border: 1px solid #FEF3C7;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.conditions-alert-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #B45309;
+    margin: 0 0 10px 0;
+}
+
+.conditions-alert-list {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.conditions-alert-item {
+    font-size: 13.5px;
+    color: #92400E;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.conditions-alert-item:last-child {
+    margin-bottom: 0;
+}
+
+.recommendations-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* DISCLAIMER CARD */
+.disclaimer-alert-card {
+    background-color: #FFF8F8;
+    border: 1px solid #FCA5A5;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.disclaimer-badge {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    background-color: #FEE2E2;
+    color: var(--danger);
+    padding: 4px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.disclaimer-text-card {
+    font-size: 13.5px;
+    color: #991B1B;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ACTIONS */
+.result-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.retake-btn {
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 1px solid #D1D5DB;
+    color: var(--text);
+    font-size: 14.5px;
+}
+
+.retake-btn:hover {
+    background-color: #F8FAFC;
+}
+
+.dashboard-btn {
+    padding: 12px 28px;
+    font-size: 14.5px;
+}
+
+/* EMPTY STATE FOR RESULTS */
+.result-empty-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: var(--background);
+}
+
+.empty-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 50px 30px;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.01);
+}
+
+.empty-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.empty-card h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text);
+    margin: 0 0 10px 0;
+}
+
+.empty-card p {
+    font-size: 14.5px;
+    color: var(--muted);
+    margin: 0 0 24px 0;
+    line-height: 1.5;
+}
+
+.empty-btn {
+    padding: 12px 24px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .result-content-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .metrics-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .result-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .result-meta {
+        text-align: left;
+    }
+
+    .result-actions {
+        justify-content: stretch;
+        flex-direction: column-reverse;
+        gap: 12px;
+    }
+
+    .retake-btn,
+    .dashboard-btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+    }
+}
+
+/* Patient assessment grid columns */
+.patient-report-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    .patient-report-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .patient-report-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .diet-table-wrapper {
+        display: none !important;
+    }
+    
+    .diet-mobile-cards {
+        display: flex !important;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+.nutrition-visualization-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+    .nutrition-visualization-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .nutrition-visualization-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
